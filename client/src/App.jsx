@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-const API = (import.meta.env.VITE_API_URL || "http://localhost:5000/api").replace(/\/$/, "");
+const API = (import.meta.env.VITE_API_URL || "https://tracker-7i1s.onrender.com/api").replace(/\/$/, "");
 const demoMode = import.meta.env.VITE_DEMO_MODE === "true";
 const apiFetch = (path, options = {}) => {
   const token = localStorage.getItem("keystone-token");
